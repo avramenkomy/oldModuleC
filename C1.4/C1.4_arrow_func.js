@@ -10,3 +10,4 @@ console.log((function (a, b){
 
 //arrow functions
 console.log(((a, b) => a + b)(2, 4)); //6
+
