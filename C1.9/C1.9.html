@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C1.9</title>
+    <title>C1.9 rgbClock</title>
 </head>
 <body>
-    <script src="C1.9_setTimeout.js"></script>
+    <h1>RGB Clock</h1>
+    <p>Меняет фон каждую секунду</p>
+    <section>
+        <div id="rgb-clock" style="width: 300px; height: 300px;">
+            <h3 id="clock"></h3>
+            <p id="color"></p>
+        </div>
+        <button class="btn j-btn j-stop-btn" style="margin-top: 5px;">Остановить</button>
+    </section>
+    <script src="rgbClock.js"></script>    
 </body>
 </html>
