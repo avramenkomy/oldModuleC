@@ -122,8 +122,7 @@ startBtn.addEventListener('click', () => {
     }
 });
 
-pauseBtn.addEventListener('click', () => {
-        
+pauseBtn.addEventListener('click', () => {        
     if (message.textContent === 'countdown...') {
         pauseBtn.classList.add("disabled");
         startBtn.classList.remove("disabled");
@@ -138,7 +137,8 @@ pauseBtn.addEventListener('click', () => {
 
 resetBtn.addEventListener('click', () => {
     clearInterval(intervalId);
-    intervalId = null;  
+    intervalId = null;
+    startBtn.innerText = "start" 
     resetTime();
     messageOutput('');
 });
