@@ -12,40 +12,46 @@
     <p>Реализация таймера на js</p>
     <div class="wrapper">
         <div class="timer">
-            <div class="timer__title">Timer</div>
+            <div class="timer-title">Timer</div>
       
-            <div class="timer__time">
-                <div class="timer__time-block j-timer__hours">00</div>
-                <div class="timer__time-block j-timer__minutes">00</div>
-                <div class="timer__time-block j-timer__seconds">00</div>
+            <div class="timer-time">
+                <div class="timer-time-block j-timer-hours">00</div>
+                <div class="timer-time-colon">:</div>
+                <div class="timer-time-block j-timer-minutes">00</div>
+                <div class="timer-time-colon">:</div>
+                <div class="timer-time-block j-timer-seconds">00</div>
             </div>
-          
-            <div class="control-panel">
-                <button class="control-panel__btn j-btn-25">25 min</button>
-                <button class="control-panel__btn j-btn-15">15 min</button>
-                <button class="control-panel__btn j-btn-5">5 min</button>
+
+            <div class="timer-add-time">
+                <div class="input-group input-group-sm row">
+                    <input type="text" maxlength="2" size="30" class="form-control col-3 j-input-time">
+                    <div class="input-group-append col-9 btn-panel">
+                        <button class="btn btn-outline-primary btn-sm col j-btn-setHours" type="button">set h</button>
+                        <button class="btn btn-outline-primary btn-sm col j-btn-setMinutes" type="button">set m</button>
+                        <button class="btn btn-outline-primary btn-sm col j-btn-setSeconds" type="button">set s</button>
+                    </div>
+                </div>
             </div>
-      
-            <div class="timer__control-block">
-                <button class="btn j-btn-hour">Add hour</button>
-                <button class="btn j-btn-minute">Add minute</button>
-                <button class="btn j-btn-second">Add second</button>
+
+            <div class="timer-control-panel">
+                <div class="btn-group btn-group-toggle row" data-toggle="buttons">
+                    <button class="btn btn-outline-primary btn-sm col-4 j-start" type="button">start</button>
+                    <button class="btn btn-outline-primary btn-sm col-4 j-pause" type="button">pause</button>
+                    <button class="btn btn-outline-primary btn-sm col-4 j-reset" type="button">reset</button>
+                </div>
             </div>
-          
-            <div class="timer__control-block">
-                <button class="btn j-btn-start">start</button>
-                <button class="btn j-btn-pause">pause</button>
-                <button class="btn j-btn-reset">Reset</button>
-            </div>
+
+            <div class="timer-message">timer message</div>
+            
         </div>
     </div>
 
     <!-- Звуковой сигнал окончания таймера-->
-    <audio id="sound1" src="media/Windows Ding.wav"></audio>
-    <button class="btn j-btn-sound">Ding</button>
+    <audio id="sound1" src="media/Ding.wav"></audio>
+    <!-- <button class="btn j-btn-sound">Ding</button> -->
 
     <script src="script.js"></script>
-    <script src="jQuery/jQuery_3_5_1.js"></script>
-    <script src="bootstrap/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <!-- <script src="jQuery/jQuery_3_5_1.js"></script>
+    <script src="bootstrap/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script> -->
 </body>
 </html>
