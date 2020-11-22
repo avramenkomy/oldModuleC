@@ -8,6 +8,8 @@
   },
   "author": "I",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  },
   "devDependencies": {}
 }
