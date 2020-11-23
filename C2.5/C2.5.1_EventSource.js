@@ -1,9 +1,9 @@
 const header = new Headers({
     'Access-Control-Allow-Credentials': true, 
-    'Access-Control-Allow-Origin': 'https://sf-pyw.mosyag.in/sse/stream'
+    'Access-Control-Allow-Origin': '*'
 })
 
-const evtSource = new EventSource('https://sf-pyw.mosyag.in/sse/stream', header)
+const evtSource = new EventSource('http://localhost:9999/', header)
 
 evtSource.onopen = event => {
     console.log(event)
