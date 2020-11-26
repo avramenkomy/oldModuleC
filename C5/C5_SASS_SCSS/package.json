@@ -1,0 +1,13 @@
+{
+  "name": "c5_sass_scss",
+  "version": "1.0.0",
+  "description": "example work with sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass input.scss style.css",
+    "start": "start index.html"
+  },
+  "author": "avramenkomy",
+  "license": "ISC"
+}
